@@ -9,9 +9,6 @@ phases:
     commands:
       - npx prisma generate
       - npm run build
-  post_build:
-    commands:
-      - rm -rf node_modules
 artifacts:
   files:
     - '**/*'
